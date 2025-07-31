@@ -183,33 +183,7 @@ const API_SITES = {
     //     name: 'U酷资源'
     // },
 };
-const http = require('https');
 
-const options = {
-	method: 'GET',
-	hostname: 'vod1.p.rapidapi.com',
-	port: null,
-	path: '/',
-	headers: {
-		'x-rapidapi-key': '550fe91e24msh9f5b4754d4042c1p1ca750jsn4d3d8d3aa8dc',
-		'x-rapidapi-host': 'vod1.p.rapidapi.com'
-	}
-};
-
-const req = http.request(options, function (res) {
-	const chunks = [];
-
-	res.on('data', function (chunk) {
-		chunks.push(chunk);
-	});
-
-	res.on('end', function () {
-		const body = Buffer.concat(chunks);
-		console.log(body.toString());
-	});
-});
-
-req.end();
 // 定义合并方法
 function extendAPISites(newSites) {
     Object.assign(API_SITES, newSites);
