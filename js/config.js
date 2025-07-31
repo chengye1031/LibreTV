@@ -116,7 +116,7 @@ const API_SITES = {
     },
     testSource: {
         api: 'https://api.xgbbk8.com/api.php/provide/vod',
-        name: '空内容测试源',
+        name: '性吧',
         adult: true
     },
     // 下面是一些成人内容的API源，默认隐藏，使用本项目浏览黄色内容违背项目初衷
